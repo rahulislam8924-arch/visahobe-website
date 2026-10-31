@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VisaHoBe — Visa Consulting, Business Migration &amp; International Recruitment</title>
+<meta name="description" content="VisaHoBe guides individuals, families and employers through visa applications, business migration and international worker recruitment. Clear advice, documented steps, honest timelines." />
+<meta property="og:title" content="VisaHoBe — Visa Consulting &amp; Business Migration" />
+<meta property="og:description" content="Visa applications, business migration and international recruitment support, handled step by step." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a43'/%3E%3Cpath d='M18 20l14 26 14-26' stroke='%23c9a227' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<style>
+  :root{
+    --navy:#0f2a43;
+    --navy-soft:#173b5c;
+    --gold:#c9a227;
+    --ink:#16222e;
+    --body:#4a5b6b;
+    --line:#e3e9ef;
+    --paper:#ffffff;
+    --wash:#f6f9fb;
+    --radius:14px;
+    --max:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Segoe UI",Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    color:var(--body);
+    background:var(--paper);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{color:var(--ink);line-height:1.25;margin:0 0 .5em;font-weight:700;letter-spacing:-.01em}
+  h1{font-size:clamp(2rem,4.4vw,3.1rem)}
+  h2{font-size:clamp(1.5rem,2.7vw,2.1rem)}
+  h3{font-size:1.12rem}
+  p{margin:0 0 1em}
+  a{color:var(--navy-soft)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  .eyebrow{
+    display:inline-block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:700;color:var(--gold);margin-bottom:14px;
+  }
+
+  /* header */
+  header{
+    position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+    backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line);
+  }
+  .navbar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy);font-size:1.12rem;text-decoration:none;letter-spacing:-.02em}
+  .brand-mark{width:32px;height:32px;border-radius:9px;background:var(--navy);display:grid;place-items:center;flex:none}
+  .brand-mark svg{width:18px;height:18px}
+  nav.links{display:flex;align-items:center;gap:26px}
+  nav.links a{color:var(--body);text-decoration:none;font-size:.94rem;font-weight:500}
+  nav.links a:hover{color:var(--navy)}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:12px 22px;border-radius:10px;font-weight:600;font-size:.94rem;
+    text-decoration:none;border:1px solid transparent;transition:.18s ease;cursor:pointer;
+  }
+  .btn-primary{background:var(--navy);color:#fff}
+  .btn-primary:hover{background:var(--navy-soft)}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:#c9d5e0}
+  .btn-ghost:hover{border-color:var(--navy);background:#f2f6fa}
+  .btn-gold{background:var(--gold);color:#221c05}
+  .btn-gold:hover{filter:brightness(1.06)}
+  .nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:9px;padding:8px 10px;cursor:pointer}
+
+  /* hero */
+  .hero{
+    background:
+      radial-gradient(1100px 460px at 82% -10%, rgba(201,162,39,.16), transparent 62%),
+      linear-gradient(180deg,#0f2a43 0%,#12324f 100%);
+    color:#dbe6ef;padding:76px 0 84px;position:relative;overflow:hidden;
+  }
+  .hero h1{color:#fff;max-width:20ch}
+  .hero p.lead{font-size:1.09rem;max-width:56ch;color:#c3d3e0;margin-bottom:30px}
+  .hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px}
+  .hero .btn-ghost{color:#fff;border-color:rgba(255,255,255,.3)}
+  .hero .btn-ghost:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.55)}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .card-panel{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+    border-radius:var(--radius);padding:26px 24px;
+  }
+  .card-panel h3{color:#fff;font-size:1rem;margin-bottom:16px}
+  .card-panel ul{list-style:none;padding:0;margin:0;display:grid;gap:13px}
+  .card-panel li{display:flex;gap:11px;font-size:.93rem;color:#c8d7e3}
+  .tick{flex:none;width:19px;height:19px;border-radius:50%;background:rgba(201,162,39,.2);display:grid;place-items:center;margin-top:2px}
+  .tick svg{width:11px;height:11px;stroke:var(--gold)}
+
+  /* generic section */
+  section{padding:78px 0}
+  section.alt{background:var(--wash);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .section-head{max-width:62ch;margin-bottom:42px}
+  .section-head p{font-size:1.02rem}
+
+  /* services */
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .svc{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 22px;transition:.18s ease;
+  }
+  .svc:hover{border-color:#c8d6e2;box-shadow:0 10px 28px rgba(15,42,67,.07);transform:translateY(-2px)}
+  .svc .ico{width:42px;height:42px;border-radius:11px;background:#eef4f9;display:grid;place-items:center;margin-bottom:16px}
+  .svc .ico svg{width:21px;height:21px;stroke:var(--navy);fill:none;stroke-width:1.7}
+  .svc p{font-size:.93rem;margin:0}
+
+  /* process */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;position:relative}
+  .step .num{
+    font-size:.8rem;font-weight:800;letter-spacing:.06em;color:var(--gold);
+    text-transform:uppercase;margin-bottom:12px;display:block;
+  }
+  .step p{font-size:.93rem;margin:0}
+
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .quote{
+    border-left:3px solid var(--gold);padding:4px 0 4px 22px;font-size:1.06rem;color:var(--ink);
+  }
+  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+  .stat{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .stat strong{display:block;font-size:1.25rem;color:var(--navy)}
+  .stat span{font-size:.82rem;color:var(--body)}
+
+  /* contact */
+  .contact-card{
+    background:var(--navy);color:#cfdde8;border-radius:18px;padding:46px;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;
+  }
+  .contact-card h2{color:#fff;margin-bottom:12px}
+  .contact-card p{color:#b9cbda;margin-bottom:0}
+  .contact-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .contact-list li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+  .contact-list a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.28)}
+  .contact-list a:hover{border-color:var(--gold)}
+  .contact-list .lbl{display:block;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#8fa9bd;margin-bottom:2px}
+
+  footer{padding:34px 0;border-top:1px solid var(--line);font-size:.87rem;color:#6c7d8d}
+  .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+  .foot a{color:var(--body);text-decoration:none}
+  .foot a:hover{color:var(--navy)}
+
+  /* responsive */
+  @media (max-width:960px){
+    .hero-grid,.about-grid,.contact-card{grid-template-columns:1fr}
+    .grid-4{grid-template-columns:repeat(2,1fr)}
+    .contact-card{padding:34px}
+    .hero{padding:56px 0 62px}
+  }
+  @media (max-width:700px){
+    nav.links{display:none}
+    nav.links.open{
+      display:flex;position:absolute;top:68px;left:0;right:0;background:#fff;
+      flex-direction:column;align-items:flex-start;gap:4px;padding:14px 22px 20px;
+      border-bottom:1px solid var(--line);box-shadow:0 16px 24px rgba(15,42,67,.08);
+    }
+    nav.links.open a{padding:9px 0;width:100%}
+    nav.links.open .btn{margin-top:8px;width:100%}
+    .nav-toggle{display:block}
+    .steps{grid-template-columns:1fr}
+    section{padding:58px 0}
+  }
+  @media (max-width:520px){
+    .grid-4{grid-template-columns:1fr}
+    .stat-row{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap navbar">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c9a227" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6l7 13 7-13"/></svg>
+      </span>
+      VisaHoBe
+    </a>
+
+    <nav class="links" id="mainnav">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="mailto:info@visahobe.work.gd?subject=Consultation%20request">Book a consultation</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f2a43" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Visa consulting · Business migration · Recruitment</span>
+        <h1>Your route abroad, handled step by step.</h1>
+        <p class="lead">
+          VisaHoBe advises individuals, families and employers on visas, business
+          migration and overseas hiring. We tell you what applies to your case, which
+          documents matter, and what happens at each stage — in writing, before you commit.
+        </p>
+        <div class="cta">
+          <a class="btn btn-gold" href="mailto:info@visahobe.work.gd?subject=Consultation%20request">Book a consultation</a>
+          <a class="btn btn-ghost" href="#services">See how we help</a>
+        </div>
+        <div class="card-panel">
+          <h3>What you get from the first call</h3>
+          <ul>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l6 6L20 6"/></svg></span> An honest read on whether your case is realistic</li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l6 6L20 6"/></svg></span> A written document checklist for your route</li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l6 6L20 6"/></svg></span> Clear timelines and costs, with no hidden extras</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card-panel">
+        <h3>Where we work with you</h3>
+        <ul>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l6 6L20 6"/></svg></span> Work, study and visitor visa applications</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l6 6L20 6"/></svg></span> Business setup and investor migration routes</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l6 6L20 6"/></svg></span> Sourcing and compliance for overseas employers</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l6 6L20 6"/></svg></span> Appeals, refusals and re-application reviews</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2>Practical help, from eligibility check to decision</h2>
+        <p>
+          Every engagement starts with your facts, not a sales pitch. We map the route
+          that fits your profile and tell you plainly where the risk sits.
+        </p>
+      </div>
+
+      <div class="grid-4">
+        <article class="svc">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h11l5 5-5 5H4z"/><path d="M8 12h6"/></svg></div>
+          <h3>Work &amp; study visas</h3>
+          <p>Eligibility assessment, employer or institution paperwork, and a complete application pack reviewed before submission.</p>
+        </article>
+
+        <article class="svc">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M6 20V9l6-4 6 4v11"/><path d="M10 20v-5h4v5"/></svg></div>
+          <h3>Business migration</h3>
+          <p>Company formation, investment routes and the documentation that supports a credible business case abroad.</p>
+        </article>
+
+        <article class="svc">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M17 8h4M19 6v4"/><path d="M16.5 15.5c1-.7 2.2-1 3.5-1"/></svg></div>
+          <h3>International recruitment</h3>
+          <p>Worker sourcing for agriculture, construction, tourism and manufacturing employers, with screening and document support.</p>
+        </article>
+
+        <article class="svc">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></div>
+          <h3>Documentation &amp; review</h3>
+          <p>Translations, attestation guidance and a second pair of eyes on anything going to a consulate or embassy.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Three stages, no surprises</h2>
+        <p>You always know what is happening with your file and what is expected from you next.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="num">Stage 01</span>
+          <h3>Intro consultation</h3>
+          <p>We go through your background, destination and timeline, then tell you which routes are realistic for you.</p>
+        </div>
+        <div class="step">
+          <span class="num">Stage 02</span>
+          <h3>Eligibility &amp; documents</h3>
+          <p>You receive a written checklist and a document review, so gaps are found before an officer finds them.</p>
+        </div>
+        <div class="step">
+          <span class="num">Stage 03</span>
+          <h3>Application &amp; follow-through</h3>
+          <p>We prepare and submit, track the response, and support you on next steps if anything is queried.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <span class="eyebrow">About VisaHoBe</span>
+        <h2>Clear advice for people making a life-changing decision</h2>
+        <p>
+          Moving country is not a purchase, it is a decision with consequences for your
+          family, your work and your money. Our job is to give you the information you
+          need to make that decision properly, and then handle the paperwork competently.
+        </p>
+        <p>
+          We work with applicants in Bangladesh and with employers abroad who need
+          workers recruited through a process that holds up to scrutiny.
+        </p>
+        <div class="stat-row">
+          <div class="stat"><strong>1 business day</strong><span>Typical first response</span></div>
+          <div class="stat"><strong>Written</strong><span>Checklists and quotes</span></div>
+          <div class="stat"><strong>Plain language</strong><span>No jargon, no pressure</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="quote">
+          “Most refusals we see are not bad luck. They are missing documents, inconsistent
+          dates or an application submitted for the wrong route.”
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <div class="contact-card">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Tell us your situation</h2>
+          <p>
+            Send a short summary: your nationality, the country you are aiming for, and
+            what you are applying for. We will reply with the routes that fit and what to prepare.
+          </p>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <span>
+              <span class="lbl">New enquiries</span>
+              <a href="mailto:info@visahobe.work.gd?subject=Consultation%20request">info@visahobe.work.gd</a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <span class="lbl">Existing clients</span>
+              <a href="mailto:support@visahobe.work.gd?subject=Case%20follow-up">support@visahobe.work.gd</a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <span class="lbl">Employers &amp; agencies</span>
+              <a href="mailto:info@visahobe.work.gd?subject=Recruitment%20enquiry">Start a recruitment enquiry</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>&copy; <span id="year">2026</span> VisaHoBe. All rights reserved.</span>
+    <span><a href="mailto:info@visahobe.work.gd">info@visahobe.work.gd</a></span>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainnav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') nav.classList.remove('open');
+    });
+  }
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
